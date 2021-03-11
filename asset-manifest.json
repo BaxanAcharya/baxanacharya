@@ -1,25 +1,30 @@
 {
   "files": {
     "main.css": "/baxanacharya/static/css/main.339debef.chunk.css",
-    "main.js": "/baxanacharya/static/js/main.a6df3e98.chunk.js",
-    "main.js.map": "/baxanacharya/static/js/main.a6df3e98.chunk.js.map",
-    "runtime-main.js": "/baxanacharya/static/js/runtime-main.6238c04f.js",
-    "runtime-main.js.map": "/baxanacharya/static/js/runtime-main.6238c04f.js.map",
-    "static/js/2.709f1d16.chunk.js": "/baxanacharya/static/js/2.709f1d16.chunk.js",
-    "static/js/2.709f1d16.chunk.js.map": "/baxanacharya/static/js/2.709f1d16.chunk.js.map",
-    "static/js/3.e908d0c6.chunk.js": "/baxanacharya/static/js/3.e908d0c6.chunk.js",
-    "static/js/3.e908d0c6.chunk.js.map": "/baxanacharya/static/js/3.e908d0c6.chunk.js.map",
+    "main.js": "/baxanacharya/static/js/main.4ede9050.chunk.js",
+    "main.js.map": "/baxanacharya/static/js/main.4ede9050.chunk.js.map",
+    "runtime-main.js": "/baxanacharya/static/js/runtime-main.84f5f41e.js",
+    "runtime-main.js.map": "/baxanacharya/static/js/runtime-main.84f5f41e.js.map",
+    "static/js/2.9923439c.chunk.js": "/baxanacharya/static/js/2.9923439c.chunk.js",
+    "static/js/2.9923439c.chunk.js.map": "/baxanacharya/static/js/2.9923439c.chunk.js.map",
+    "static/js/3.d24dcfc7.chunk.js": "/baxanacharya/static/js/3.d24dcfc7.chunk.js",
+    "static/js/3.d24dcfc7.chunk.js.map": "/baxanacharya/static/js/3.d24dcfc7.chunk.js.map",
     "index.html": "/baxanacharya/index.html",
     "static/css/main.339debef.chunk.css.map": "/baxanacharya/static/css/main.339debef.chunk.css.map",
-    "static/js/2.709f1d16.chunk.js.LICENSE.txt": "/baxanacharya/static/js/2.709f1d16.chunk.js.LICENSE.txt",
+    "static/js/2.9923439c.chunk.js.LICENSE.txt": "/baxanacharya/static/js/2.9923439c.chunk.js.LICENSE.txt",
     "static/media/Me.faa639da.jpg": "/baxanacharya/static/media/Me.faa639da.jpg",
     "static/media/Profile.e116ff9d.png": "/baxanacharya/static/media/Profile.e116ff9d.png",
-    "static/media/messenger.36fb64e1.png": "/baxanacharya/static/media/messenger.36fb64e1.png"
+    "static/media/amazon.cfc8efe1.png": "/baxanacharya/static/media/amazon.cfc8efe1.png",
+    "static/media/covid.c39ddf7f.png": "/baxanacharya/static/media/covid.c39ddf7f.png",
+    "static/media/discord.d03bb589.png": "/baxanacharya/static/media/discord.d03bb589.png",
+    "static/media/messenger.36fb64e1.png": "/baxanacharya/static/media/messenger.36fb64e1.png",
+    "static/media/voiceapp.713ba89b.png": "/baxanacharya/static/media/voiceapp.713ba89b.png",
+    "static/media/youtube.bf7beb08.png": "/baxanacharya/static/media/youtube.bf7beb08.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6238c04f.js",
-    "static/js/2.709f1d16.chunk.js",
+    "static/js/runtime-main.84f5f41e.js",
+    "static/js/2.9923439c.chunk.js",
     "static/css/main.339debef.chunk.css",
-    "static/js/main.a6df3e98.chunk.js"
+    "static/js/main.4ede9050.chunk.js"
   ]
 }
