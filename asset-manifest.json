@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/baxanacharya/static/css/main.339debef.chunk.css",
+    "main.js": "/baxanacharya/static/js/main.c8c690af.chunk.js",
+    "main.js.map": "/baxanacharya/static/js/main.c8c690af.chunk.js.map",
+    "runtime-main.js": "/baxanacharya/static/js/runtime-main.6238c04f.js",
+    "runtime-main.js.map": "/baxanacharya/static/js/runtime-main.6238c04f.js.map",
+    "static/js/2.709f1d16.chunk.js": "/baxanacharya/static/js/2.709f1d16.chunk.js",
+    "static/js/2.709f1d16.chunk.js.map": "/baxanacharya/static/js/2.709f1d16.chunk.js.map",
+    "static/js/3.e908d0c6.chunk.js": "/baxanacharya/static/js/3.e908d0c6.chunk.js",
+    "static/js/3.e908d0c6.chunk.js.map": "/baxanacharya/static/js/3.e908d0c6.chunk.js.map",
+    "index.html": "/baxanacharya/index.html",
+    "static/css/main.339debef.chunk.css.map": "/baxanacharya/static/css/main.339debef.chunk.css.map",
+    "static/js/2.709f1d16.chunk.js.LICENSE.txt": "/baxanacharya/static/js/2.709f1d16.chunk.js.LICENSE.txt",
+    "static/media/Me.faa639da.jpg": "/baxanacharya/static/media/Me.faa639da.jpg",
+    "static/media/Profile.e116ff9d.png": "/baxanacharya/static/media/Profile.e116ff9d.png",
+    "static/media/messenger.36fb64e1.png": "/baxanacharya/static/media/messenger.36fb64e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6238c04f.js",
+    "static/js/2.709f1d16.chunk.js",
+    "static/css/main.339debef.chunk.css",
+    "static/js/main.c8c690af.chunk.js"
+  ]
+}
