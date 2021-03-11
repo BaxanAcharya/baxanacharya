@@ -193,13 +193,7 @@ class Header extends Component {
                       />
                     </ListItem>
                     <Divider />
-                    <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Feedback"
-                        onClick={this.handleClose}
-                      />
-                    </ListItem>
-                    <Divider />
+
                     <ListItem button className={classes.btntransition}>
                       <ListItemText
                         primary="Contact Me"
@@ -258,8 +252,10 @@ class Header extends Component {
                   <span>Education</span>
                 </a>
 
-                <span className={classes.headerContainerSpan}>Portfolio</span>
-                <span className={classes.headerContainerSpan}>Feedback</span>
+                <a href="#portfolio" className={classes.headerContainerSpan}>
+                  {" "}
+                  <span>Portfolio</span>
+                </a>
                 <a href="#contact" className={classes.headerContainerSpan}>
                   <span>Contact Me</span>
                 </a>
