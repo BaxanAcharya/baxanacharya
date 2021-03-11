@@ -1,6 +1,7 @@
 import {
   Button,
   Container,
+  Link,
   makeStyles,
   Tooltip,
   Typography,
@@ -208,6 +209,8 @@ const Hello = () => {
               size="large"
               variant="contained"
               className={classes.buttonDownload}
+              component={Link}
+              to="https://baxanacharya.github.io/baxanacharya/Biplab's Resume.pdf"
             >
               Download CV
             </Button>
