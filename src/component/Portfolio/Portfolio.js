@@ -68,6 +68,7 @@ const Portfolio = () => {
           <MyWork />
           <MyWork />
           <MyWork />
+          <MyWork />
         </div>
       </div>
     </Container>
