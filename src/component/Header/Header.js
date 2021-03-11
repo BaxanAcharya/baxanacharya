@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import React, { Component } from "react";
 import Logo from "../../assets/img/Logo.png";
+import LogoBlack from "../../assets/img/LogoBlack.png";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const styles = (theme) => ({
@@ -229,7 +230,11 @@ class Header extends Component {
           <Container>
             <div className={classes.headerContainer}>
               <div className>
-                <img src={Logo} className={classes.headerImg} alt="Web Logo" />
+                <img
+                  src={`${this.state.scrolled ? LogoBlack : Logo}`}
+                  className={classes.headerImg}
+                  alt="Web Logo"
+                />
               </div>
               <div className={classes.headerContainerGap} />
               <div className={classes.headerContainerLink}>
