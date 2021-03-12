@@ -7,6 +7,7 @@ import Hello from "./component/Hello/Hello";
 import Portfolio from "./component/Portfolio/Portfolio";
 import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
 import Skills from "./component/Skills/Skills";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 const leftDescription =
   "I patner with startups, organizations and Client with directly, through Company or Freelancing sites to build digital product that help cilent overcome challanges and create lasting connections with millions of people every day which overall help them to gain or assets the Business";
@@ -22,6 +23,10 @@ const rightTopEducationDescription =
 function App() {
   return (
     <div id="intro">
+      <MessengerCustomerChat
+        pageId="100972251759163"
+        appId="1012992322500389"
+      />
       <Header />
       <Hello />
       <Skills />
