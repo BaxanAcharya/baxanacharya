@@ -30,6 +30,12 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 200,
+    opacity: 0.8,
+    transitionTimingFunction: "ease-in",
+    transition: "all 0.5s",
+    "&:hover": {
+      opacity: 1,
+    },
   },
 }));
 
@@ -103,6 +109,7 @@ const Portfolio = () => {
                       className={classes.media}
                       image={tile.img}
                       title={tile.title}
+                      // style={{ opacity: 0.5 }}
                     />
                   </CardActionArea>
                   <CardContent>
