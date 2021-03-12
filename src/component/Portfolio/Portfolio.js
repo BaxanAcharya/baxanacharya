@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 const tileData = [
   {
+    id: 1,
     img: Messenger,
     title: "Real Time Messenger",
     author: "Biplab Acharya",
@@ -42,6 +43,7 @@ const tileData = [
     technology: "React, Firebase, Contex API",
   },
   {
+    id: 2,
     img: Voiceapp,
     title: "Voice Controlled News app ",
     author: "Biplab Acharya",
@@ -49,6 +51,7 @@ const tileData = [
     technology: "React, Alan AI, Third party API",
   },
   {
+    id: 3,
     img: Covid,
     title: "Covid-19 Tracker",
     author: "Biplab Acharya",
@@ -56,6 +59,7 @@ const tileData = [
     technology: "React, Material UI, Third party API",
   },
   {
+    id: 4,
     img: Youtube,
     title: "Youtube Clone",
     author: "Biplab Acharya",
@@ -64,6 +68,7 @@ const tileData = [
   },
 
   {
+    id: 5,
     img: Discord,
     title: "Discord Clone",
     author: "Biplab Acharya",
@@ -71,6 +76,7 @@ const tileData = [
     technology: "React, Material UI, Redux, Firebase",
   },
   {
+    id: 6,
     img: Amazon,
     title: "Amazon Clone",
     author: "Biplab Acharya",
@@ -90,7 +96,7 @@ const Portfolio = () => {
           </Typography>
           <Grid container spacing={3}>
             {tileData.map((tile) => (
-              <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Grid item xs={12} sm={6} md={4} lg={3} key={tile.id}>
                 <Card className={classes.root}>
                   <CardActionArea href={tile.url} target="_blank">
                     <CardMedia
