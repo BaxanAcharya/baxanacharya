@@ -70,7 +70,7 @@ const tileData = [
     title: "Youtube Clone",
     author: "Biplab Acharya",
     url: "https://clone-78340.web.app/",
-    technology: "React, Material UI",
+    technology: "React, Material UI, Material Icons",
   },
 
   {
