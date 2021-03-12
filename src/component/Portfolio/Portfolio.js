@@ -1,9 +1,10 @@
 import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
   Container,
-  GridList,
-  GridListTile,
-  GridListTileBar,
-  IconButton,
+  Grid,
   makeStyles,
   Typography,
 } from "@material-ui/core";
@@ -14,7 +15,6 @@ import Youtube from "../../assets/img/youtube.png";
 import Covid from "../../assets/img/covid.png";
 import Discord from "../../assets/img/discord.png";
 import Amazon from "../../assets/img/amazon.png";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles((theme) => ({
   portfolio: {
@@ -24,112 +24,108 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "25px",
   },
   root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
+    maxWidth: 345,
+    minHeight: 300,
+    maxHeight: 345,
   },
-  gridList: {
-    flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
-  },
-  title: {
-    color: theme.palette.primary.white,
-    fontWeight: 500,
-  },
-  titleBar: {
-    background:
-      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+  media: {
+    height: 200,
   },
 }));
 
 const tileData = [
   {
     img: Messenger,
-    title: "Real Time Messenger (React)",
+    title: "Real Time Messenger",
     author: "Biplab Acharya",
     url: "https://friendssms-6e074.web.app/",
+    technology: "React, Firebase, Contex API",
   },
   {
     img: Voiceapp,
-    title: "Voice Controlled News app (React)",
+    title: "Voice Controlled News app ",
     author: "Biplab Acharya",
     url: "https://news-app-voice-controlled.web.app/",
+    technology: "React, Alan AI, Third party API",
   },
   {
     img: Covid,
-    title: "Covid-19 Tracker (React)",
+    title: "Covid-19 Tracker",
     author: "Biplab Acharya",
     url: "https://covid-19-tracker-49681.web.app/",
+    technology: "React, Material UI, Third party API",
   },
   {
     img: Youtube,
-    title: "Youtube Clone (React)",
+    title: "Youtube Clone",
     author: "Biplab Acharya",
     url: "https://clone-78340.web.app/",
+    technology: "React, Material UI",
   },
 
   {
     img: Discord,
-    title: "Discord Clone (React)",
+    title: "Discord Clone",
     author: "Biplab Acharya",
     url: "https://discord-c0fc7.web.app/",
+    technology: "React, Material UI, Redux, Firebase",
   },
   {
     img: Amazon,
-    title: "Amazon Clone (React)",
+    title: "Amazon Clone",
     author: "Biplab Acharya",
     url: "https://clone-31223.web.app/",
+    technology: "React, Material UI, Context API",
   },
 ];
-
-const MyWork = () => {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <GridList className={classes.gridList} cols={2.5}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
-            <a href={tile.url} target="_blank" rel="noreferrer">
-              <img src={tile.img} alt={tile.title} />
-            </a>
-
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`}>
-                  <MoreVertIcon
-                    className={classes.title}
-                    style={{ color: "white" }}
-                  />
-                </IconButton>
-              }
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
-  );
-};
 
 const Portfolio = () => {
   const classes = useStyles();
   return (
-    <Container id="portfolio">
-      <div className={classes.portfolio}>
-        <Typography variant="h3" gutterBottom>
-          Portfolio
-        </Typography>
-        <MyWork />
-      </div>
-    </Container>
+    <>
+      <Container id="portfolio">
+        <div className={classes.portfolio}>
+          <Typography variant="h3" gutterBottom>
+            Portfolio
+          </Typography>
+          <Grid container spacing={3}>
+            {tileData.map((tile) => (
+              <Grid item xs={12} sm={6} md={4} lg={3}>
+                <Card className={classes.root}>
+                  <CardActionArea href={tile.url} target="_blank">
+                    <CardMedia
+                      className={classes.media}
+                      image={tile.img}
+                      title={tile.title}
+                    />
+                  </CardActionArea>
+                  <CardContent>
+                    <Typography gutterBottom variant="h6" component="h2">
+                      {tile.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                    >
+                      <strong>Designed by :</strong>
+                      {tile.author}
+                    </Typography>
+                    <Typography
+                      variant="subtitle1"
+                      color="textSecondary"
+                      component="p"
+                    >
+                      <strong>Technologies:</strong> {tile.technology}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </div>
+      </Container>
+    </>
   );
 };
 
