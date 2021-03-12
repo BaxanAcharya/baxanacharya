@@ -6,6 +6,7 @@ import {
   Tooltip,
   Typography,
 } from "@material-ui/core";
+
 import React from "react";
 import ProfileImage from "../../assets/img/Profile.png";
 import Me from "../../assets/img/Me.jpg";
@@ -66,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginLeft: "41px",
     textTransform: "none",
+    textDecoration: "none",
     "&:hover": {
       background: "blue",
       color: "white",
@@ -79,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
 const Hello = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.helloContainer} id="intro">
+    <Container className={classes.helloContainer}>
       <div className={classes.helloContainerSection}>
         <div>
           <img
@@ -202,6 +204,8 @@ const Hello = () => {
               size="large"
               variant="contained"
               className={classes.buttonContact}
+              component={Link}
+              href="#contact"
             >
               Contact Me
             </Button>
@@ -210,7 +214,7 @@ const Hello = () => {
               variant="contained"
               className={classes.buttonDownload}
               component={Link}
-              to="https://baxanacharya.github.io/baxanacharya/Biplab's Resume.pdf"
+              href="https://raw.githubusercontent.com/BaxanAcharya/baxanacharya/082fc802439b7281b7c00c77aa93465da24dfd9e/src/assets/pdf/Biplab-Resume.pdf"
             >
               Download CV
             </Button>

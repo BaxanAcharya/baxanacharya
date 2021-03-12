@@ -48,38 +48,38 @@ const useStyles = makeStyles((theme) => ({
 const tileData = [
   {
     img: Messenger,
-    title: "Real Time Messenger",
+    title: "Real Time Messenger (React)",
     author: "Biplab Acharya",
     url: "https://friendssms-6e074.web.app/",
   },
   {
     img: Voiceapp,
-    title: "Voice Controlled News app",
+    title: "Voice Controlled News app (React)",
     author: "Biplab Acharya",
     url: "https://news-app-voice-controlled.web.app/",
   },
   {
     img: Covid,
-    title: "Covid-19 Tracker",
+    title: "Covid-19 Tracker (React)",
     author: "Biplab Acharya",
     url: "https://covid-19-tracker-49681.web.app/",
   },
   {
     img: Youtube,
-    title: "Youtube Clone",
+    title: "Youtube Clone (React)",
     author: "Biplab Acharya",
     url: "https://clone-78340.web.app/",
   },
 
   {
     img: Discord,
-    title: "Discord Clone",
+    title: "Discord Clone (React)",
     author: "Biplab Acharya",
     url: "https://discord-c0fc7.web.app/",
   },
   {
     img: Amazon,
-    title: "Amazon Clone",
+    title: "Amazon Clone (React)",
     author: "Biplab Acharya",
     url: "https://clone-31223.web.app/",
   },

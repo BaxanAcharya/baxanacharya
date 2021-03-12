@@ -21,7 +21,7 @@ const rightTopEducationDescription =
 
 function App() {
   return (
-    <div className="app">
+    <div id="intro">
       <Header />
       <Hello />
       <Skills />
@@ -36,6 +36,7 @@ function App() {
         rightBottomBadge="Upwork and Other Platform"
         rightBottomYear="2020-Present"
         showLink
+        id="experience"
       />
       <Education
         leftTitle="Education"
@@ -47,6 +48,7 @@ function App() {
         rightBottomTitle="Bsc. Hons. Computing"
         rightBottomBadge="Coventry University"
         rightBottomYear="Completed at 2020"
+        id="education"
       />
       <Portfolio />
       <Contact />

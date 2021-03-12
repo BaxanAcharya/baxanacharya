@@ -1,12 +1,13 @@
 import {
+  Button,
   ClickAwayListener,
   Container,
   Divider,
   Grow,
   IconButton,
+  Link,
   List,
   ListItem,
-  ListItemText,
   Paper,
   Popper,
   withStyles,
@@ -22,8 +23,9 @@ const styles = (theme) => ({
     position: "sticky",
     top: 0,
     zIndex: 100,
-
     width: "100%",
+    // transitionTimingFunction: "ease-in",
+    // transition: "all 0.5s",
   },
 
   headerBackgroundWhite: {
@@ -157,48 +159,78 @@ class Header extends Component {
                 <div className={classes.paperroot}>
                   <List component="nav" aria-label="nav bar items">
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Intro"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#intro"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Intro
+                      </Button>
                     </ListItem>
 
                     <Divider />
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Skills"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#skills"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Skills
+                      </Button>
                     </ListItem>
                     <Divider />
                     <Divider />
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Experience"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#experience"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Experience
+                      </Button>
                     </ListItem>
                     <Divider />
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Education"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#education"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Education
+                      </Button>
                     </ListItem>
                     <Divider />
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Portfolio"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#portfolio"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Portfolio
+                      </Button>
                     </ListItem>
                     <Divider />
 
                     <ListItem button className={classes.btntransition}>
-                      <ListItemText
-                        primary="Contact Me"
+                      <Button
+                        size="large"
+                        style={{ textTransform: "none", width: 100 }}
+                        component={Link}
+                        href="#contact"
                         onClick={this.handleClose}
-                      />
+                      >
+                        Contact
+                      </Button>
                     </ListItem>
                   </List>
                 </div>
@@ -238,17 +270,11 @@ class Header extends Component {
                 <a href="#skills" className={classes.headerContainerSpan}>
                   <span>Skills</span>
                 </a>
-                <a
-                  href="#experienceEducation"
-                  className={classes.headerContainerSpan}
-                >
+                <a href="#experience" className={classes.headerContainerSpan}>
                   <span>Expericence</span>
                 </a>
 
-                <a
-                  href="#experienceEducation"
-                  className={classes.headerContainerSpan}
-                >
+                <a href="#education" className={classes.headerContainerSpan}>
                   <span>Education</span>
                 </a>
 

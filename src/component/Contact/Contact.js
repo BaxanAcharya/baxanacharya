@@ -1,12 +1,14 @@
 import {
   Button,
+  CircularProgress,
   Container,
   makeStyles,
   TextareaAutosize,
   TextField,
   Typography,
 } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const useStyles = makeStyles((theme) => ({
   contact: {
@@ -18,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
+
   contactText: {
     marginRight: "15px",
     flex: 4,
@@ -37,8 +40,44 @@ const useStyles = makeStyles((theme) => ({
 
 const Contact = () => {
   const classes = useStyles();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill the all fields");
+    } else {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          "service_1dye66h",
+          "template_xgx4qj2",
+          e.target,
+          "user_t02I6CK3Q9OObDcXivSpP"
+        )
+        .then(
+          (result) => {
+            alert("Email send Successfully");
+            setEmail("");
+            setName("");
+            setMessage("");
+            setLoading(false);
+            console.log(result.text);
+          },
+          (error) => {
+            alert(error.text);
+            setLoading(false);
+            console.log(error.text);
+          }
+        );
+    }
+  };
   return (
-    <Container id="contact">
+    <Container>
       <div className={classes.contact}>
         <div className={classes.contactText}>
           <Typography variant="h4" gutterBottom>
@@ -53,42 +92,50 @@ const Contact = () => {
         <div className={classes.contactForm}>
           <div className={classes.contactFormContent}>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                id="Name"
-                label="Name"
-                name="name"
-                autoComplete="name"
-              />
-              <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                id="email"
-                type="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-              />
-            </div>
+              {loading && <CircularProgress />}
+              <form className="contact_form_class" onSubmit={sendEmail}>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  required
+                  id="Name"
+                  label="Name"
+                  name="name"
+                  autoComplete="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  required
+                  id="email"
+                  type="email"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <TextareaAutosize
+                  style={{ outlineColor: "blue", width: "100%" }}
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  rows={8}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
 
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <TextareaAutosize
-                style={{ outlineColor: "blue", width: "100%" }}
-                placeholder="Message *"
-                required
-                rows={8}
-              />
-
-              <Button
-                variant="contained"
-                color="primary"
-                style={{ marginTop: "5px", textTransform: "none" }}
-              >
-                Send Message
-              </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  style={{ marginTop: "5px", textTransform: "none" }}
+                  type="submit"
+                >
+                  Send Message
+                </Button>
+              </form>
             </div>
           </div>
         </div>

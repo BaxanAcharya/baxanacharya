@@ -43,11 +43,12 @@ const Experience = ({
   rightBottomBadge,
   rightBottomYear,
   showLink,
+  id,
 }) => {
   const classes = useStyles();
   return (
-    <Container>
-      <div className={classes.experienceContainer} id="experienceEducation">
+    <Container id={id}>
+      <div className={classes.experienceContainer}>
         <div className={classes.experienceInfo}>
           <Typography variant="h4" gutterBottom>
             {leftTitle}

@@ -4,19 +4,21 @@ import Typography from "@material-ui/core/Typography";
 
 function Copyright() {
   return (
-    <Typography
-      variant="body2"
-      color="textSecondary"
-      align="center"
-      style={{ marginTop: "25px" }}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="http://localhost:3000/">
-        Biplab Acharya Portfolio
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
+    <div id="contact">
+      <Typography
+        variant="body2"
+        color="textSecondary"
+        align="center"
+        style={{ marginTop: "25px" }}
+      >
+        {"Copyright © "}
+        <Link color="inherit" href="http://localhost:3000/">
+          Biplab Acharya Portfolio
+        </Link>{" "}
+        {new Date().getFullYear()}
+        {"."}
+      </Typography>
+    </div>
   );
 }
 
