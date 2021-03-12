@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/baxanacharya/static/css/main.958f7955.chunk.css",
+    "main.css": "/baxanacharya/static/css/main.795b0a2a.chunk.css",
     "main.js": "/baxanacharya/static/js/main.b83a9b02.chunk.js",
     "main.js.map": "/baxanacharya/static/js/main.b83a9b02.chunk.js.map",
     "runtime-main.js": "/baxanacharya/static/js/runtime-main.6a77e7f4.js",
@@ -10,7 +10,7 @@
     "static/js/3.167c20de.chunk.js": "/baxanacharya/static/js/3.167c20de.chunk.js",
     "static/js/3.167c20de.chunk.js.map": "/baxanacharya/static/js/3.167c20de.chunk.js.map",
     "index.html": "/baxanacharya/index.html",
-    "static/css/main.958f7955.chunk.css.map": "/baxanacharya/static/css/main.958f7955.chunk.css.map",
+    "static/css/main.795b0a2a.chunk.css.map": "/baxanacharya/static/css/main.795b0a2a.chunk.css.map",
     "static/js/2.146d2b5d.chunk.js.LICENSE.txt": "/baxanacharya/static/js/2.146d2b5d.chunk.js.LICENSE.txt",
     "static/media/Me.faa639da.jpg": "/baxanacharya/static/media/Me.faa639da.jpg",
     "static/media/Profile.e116ff9d.png": "/baxanacharya/static/media/Profile.e116ff9d.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.6a77e7f4.js",
     "static/js/2.146d2b5d.chunk.js",
-    "static/css/main.958f7955.chunk.css",
+    "static/css/main.795b0a2a.chunk.css",
     "static/js/main.b83a9b02.chunk.js"
   ]
 }
