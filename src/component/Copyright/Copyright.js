@@ -12,7 +12,10 @@ function Copyright() {
         style={{ marginTop: "25px" }}
       >
         {"Copyright © "}
-        <Link color="inherit" href="http://localhost:3000/">
+        <Link
+          color="inherit"
+          href="https://baxanacharya.github.io/baxanacharya/"
+        >
           Biplab Acharya Portfolio
         </Link>{" "}
         {new Date().getFullYear()}
